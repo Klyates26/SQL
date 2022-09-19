@@ -1,0 +1,22 @@
+-Create a Store Database-
+
+create table Beer (id integer primary key, Brand text, Quantity integer, PricePerCan integer, Rank integer, Sold integer);
+
+insert into Beer values (1, 'Coors', 120, .75, 2, 102);
+insert into beer values (2, 'michelob', 300, 1.00, 1, 175);
+insert into beer values (3, 'Budlight', 200, .50, 3, 87);
+insert into beer values (4, 'Bush Light', 100, .45, 4, 56);
+insert into beer values (5, 'Natural Light', 250, .45, 5, 50);
+
+-display the database-
+select * from beer;
+
+-display the datebase in order by price-
+SELECT * FROM Beer where pricepercan order by pricepercan;
+
+-display the database in rank order-
+select * from beer where rank order by rank;
+
+-display the total sold-
+select sum(sold) from beer;
+
